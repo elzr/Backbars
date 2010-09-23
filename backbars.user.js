@@ -40,10 +40,6 @@ jQuery.fn.reduce = function(fn, ini) {
 	this.each(function() { total = fn.call(this, total); });
 	return total;
 };
-jQuery.log = function(msg) {
-	console.log(msg);
-	return msg;
-};
 
 $(function() {
 	function padding(pad) {return function(){ $(this).css('padding', pad||'2px 3px'); }};
@@ -52,7 +48,6 @@ $(function() {
 //action
 	function backbar(root, items, scores, fn) {
 		var root = $(root), items = items ? root.find(items) : root, scores = scores ? root.find(scores) : items, allSame = true;
-		$.log(items.length+'s'+scores.length)
 		if((items.length <= 1) || (items.length != scores.length)) return;
 		items = items.slice(0,200); scores = scores.slice(0,200); //for performance reasons, only 200 backbars will be drawn
 		scores = scores.map(function(){ return parseFloat($(this).text())||0 });
