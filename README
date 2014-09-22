@@ -3,9 +3,8 @@ DESCRIPTION:
 PROJECT PAGE: 
 	http://elzr.com/backbars
 COMPATIBILITY:
-	Currently works on Firefox thru Greasemonkey.
+	Currently works on Firefox thru Greasemonkey, Google Chrome, Safari Greasekit, Opera 
 GOALS:
-	* Work in Google Chrome, Safari Greasekit, Opera.
 	* Work on more sites: Craigslist, Metafilter subsites..
 	* Better performance on busy sites.
 	* Migrate to jQuery 1.4 (currently breaks for unknown reasons).
